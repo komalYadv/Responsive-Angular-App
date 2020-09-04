@@ -1,0 +1,20 @@
+.nav{
+    background: linear-gradient(to left, #D36FA3 0%,  #E6A8D7 100%);
+    padding: 0.5%;
+}
+
+a{
+    font-size: 17px;
+    color: #fff;
+    font-weight: 700;
+}
+
+a:hover{
+    color:#751A33;
+    background-color: white;
+    border-radius: 5px;
+}
+
+.nav-item{
+    padding: 0 1%;
+}

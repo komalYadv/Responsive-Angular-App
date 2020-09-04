@@ -1,0 +1,22 @@
+<div class="form-div">
+    <form>
+        
+        <label for="id">Id</label>
+        <input [(ngModel)]="student.id" type="number" class="form-control" name="Id" id="exampleInputId" aria-describedby="IdHelp" placeholder="Enter your Id" min="500" max="700" required>
+        <small id="IdHelp" class="form-text text-muted">Enter student Id here.</small>
+        
+        <label for="name">Name</label>
+        <input [(ngModel)]="student.name" type="text" class="form-control" name="name" id="exampleInputName" aria-describedby="nameHelp" placeholder="Enter your name" required>
+        <small id="nameHelp" class="form-text text-muted">Enter student name here.</small>
+        
+        <label for="email">Email address</label>
+        <input [(ngModel)]="student.email" type="email" class="form-control" name="email" id="exampleInputEmail" aria-describedby="emailHelp" placeholder="wxyz@gmail.com" required>
+        <small id="emailHelp" class="form-text text-muted">Enter your email here.</small>
+        
+        <label for="description">Student Description</label>
+        <textarea [(ngModel)]="student.description" type="text" class="form-control" name="description" id="deschelp" aria-describedby="descHelp" required>
+        </textarea>
+        <small id="descHelp" class="form-text text-muted">Enter student description here.</small>
+    </form>
+    <button class="btn" (click)="createStudent()">Enroll➟</button>
+</div>

@@ -1,0 +1,104 @@
+.main-container{
+    padding: unset;
+    position: relative;
+}
+
+.home-img{
+    width: 100%;
+    max-height: 40vw;
+    opacity: 0.94;
+}
+
+.angular-logo{
+    position: absolute;
+    bottom: 24%;
+    right: 41%;
+    opacity: 0.58;
+}
+
+.logo-img{
+    width:17vw;
+}
+
+.home-text{
+    position: absolute;
+    bottom: 15%;
+    left: 2%;
+    padding: 1%;
+    width:35%;
+}
+
+.mainp{
+    color:#fff;
+    font-size: 2.9vw;
+    font-weight: 800;
+    font-family: cursive;
+}
+
+.subsp{
+    color:#fff;
+    font-size: 1.4vw;
+    font-weight: 700;
+    font-family: cursive;
+}
+
+button, .btn{
+    background: linear-gradient(to left, #FF4D9A 0%,  #DB7FB6 100%);
+    color: #751A33;
+    padding: 1%;
+    border-color: rgba(87, 195, 40,0.5);
+    border-radius: 5px;
+    font-size: 1.2vw;
+    font-weight: 600;
+}
+
+button:hover,.btn:hover{
+    color: #fff;
+    background: linear-gradient(to right, #FF4D9A 0%,  #DB7FB6 100%);
+    border-color: rgba(255, 133, 63,0.6);
+}
+
+.display{
+    color: #751A33;
+    font-size: 2vw;
+    font-family: cursive;
+    font-weight: 700;
+}
+
+.lead{
+    color: #FF4D9A;
+    font-size: 1.2vw;
+    font-family: cursive;
+    font-weight: 500;
+}
+
+.card-title{
+    color: #751A33;
+}
+
+.card-text{
+    color: #FF4D9A;
+}
+
+.j-no1,.j-no2{
+    background-color:#B0E098 ;
+}
+
+.j-image{
+    height: 18vw;
+}
+
+@media (max-width: 575px) {
+    .j-image{
+        height: 50vw;
+    }
+
+    button,.btn{
+     font-size:2.2vw ;
+    }
+
+    .subsp{
+        font-size: 1.58vw;
+    }
+}
+

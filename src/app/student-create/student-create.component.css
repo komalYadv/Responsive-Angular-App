@@ -1,0 +1,44 @@
+.form-div{
+    margin-top: 40px;
+    width:50%;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: #B0E098;
+    padding: 5%;
+    border-radius: 25px;
+}
+
+label{
+    color: #751A33;
+    font-weight: 700;
+    font-family: cursive;
+}
+
+.btn{
+    background: linear-gradient(to left, #FF4D9A 0%,  #DB7FB6 100%);
+    color: #751A33;
+    padding: 1%;
+    border-color: rgba(87, 195, 40,0.5);
+    border-radius: 5px;
+    font-size: 1.2vw;
+    font-weight: 600;
+    margin-top:2%;
+}
+
+.btn:hover{
+    color: #fff;
+    background: linear-gradient(to right, #FF4D9A 0%,  #DB7FB6 100%);
+    border-color: rgba(255, 133, 63,0.6);
+}
+
+input[type=text],input[type=email],input[type=number]{
+  color:#FF4D9A;
+  font-weight: 600;
+}
+
+
+@media (max-width: 575px) {
+    .btn{
+     font-size:2.8vw ;
+    }
+}
