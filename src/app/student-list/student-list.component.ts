@@ -20,5 +20,14 @@ export class StudentListComponent implements OnInit {
   public selectStudent(student){
     this.selectedStudent = student;
   } 
+
+   public onDelete(id){
+    let index = this.students.findIndex(function (student){ 
+      return student.id === id;
+    });
+    if(index !== -1){
+      this.students.splice(index,1);
+    }
+  }
   
 }
