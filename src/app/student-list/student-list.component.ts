@@ -22,11 +22,11 @@ export class StudentListComponent implements OnInit {
   } 
 
    public onDelete(id){
-    let index = this.students.findIndex(function (student){ 
+    let item = this.students.findIndex(function (student){ 
       return student.id === id;
     });
-    if(index !== -1){
-      this.students.splice(index,1);
+    if(item !== -1){
+      this.students.splice(item,1);
     }
   }
   
