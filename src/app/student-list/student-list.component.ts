@@ -10,6 +10,7 @@ export class StudentListComponent implements OnInit {
   student;
   selectedStudent;
   public students = [];
+  isCollapsed : boolean = true;
   
   constructor(private homeService:HomeServiceService) {}
 
@@ -20,6 +21,10 @@ export class StudentListComponent implements OnInit {
   public selectStudent(student){
     this.selectedStudent = student;
   } 
+    
+  toggleCollapse(){
+    this.isCollapsed = !this.isCollapsed;
+  }
 
    public onDelete(id){
     let item = this.students.findIndex(function (student){ 
