@@ -14,7 +14,7 @@
               <td>{{student.name}}</td>
               <td>{{student.email}}</td>
               <td>
-                 <button class="btn" (click) ="selectStudent(student)">Show Details</button>
+                 <button class="btn" (click) ="selectStudent(student)" (click) ="toggleCollapse()">Show Details</button>
               </td>
               <td>
                  <button class="btn" (click) ="onDelete(student.id)">Delete</button>
@@ -22,15 +22,17 @@
             </tr>
         </tbody>
     </table>
-    <div class="card text-center" *ngIf="selectedStudent">
-      <div class="card-header">
-          # {{selectedStudent.id}}
-      </div>
-       <div class="card-block">
-          <h4 class="card-title"> {{selectedStudent.name}} </h4>
-          <p class="card-text">
-             {{selectedStudent.description}}
-          </p>
+    <div *ngIf = "!isCollapsed">
+      <div class="card text-center" *ngIf="selectedStudent">
+        <div class="card-header">
+            # {{selectedStudent.id}}
         </div>
-    </div>
+         <div class="card-block">
+            <h4 class="card-title"> {{selectedStudent.name}} </h4>
+            <p class="card-text">
+               {{selectedStudent.description}}
+            </p>
+          </div>
+      </div>
+  </div>
 </div>
