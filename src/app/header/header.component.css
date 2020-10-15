@@ -18,3 +18,9 @@ a:hover{
 .nav-item{
     padding: 0 1%;
 }
+
+@media (max-width: 575px) {
+    a{
+     font-size:3.8vw ;
+    }
+}
